@@ -36,7 +36,7 @@ ImageSketchGenerator/
 ├── requirements.txt # Python dependencies
 └── README.md # This file
 
-🤝 Contributing
+# 🤝 Contributing
 Fork the project.
 
 Create a branch (git checkout -b feature/new-filter).
@@ -46,9 +46,6 @@ Commit changes (git commit -m "Add watercolor filter").
 Push (git push origin feature/new-filter).
 
 Open a Pull Request.
-
-📜 License
-MIT License.
 
 📬 Contact
 Email: pc19243.muhammadyousuf@gmail.com
