@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Sketch Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎨 Sketch Generator</h1>
+      <p>Upload an image to convert it into a sketch!</p>
+
+      <div class="upload-area" id="dropZone">
+        <input type="file" id="fileInput" accept="image/*" />
+        <p>Drag & drop an image or click to browse</p>
+      </div>
+
+      <div class="controls">
+        <label for="sketchType">Sketch Style:</label>
+        <select id="sketchType">
+          <option value="pencil">Pencil Sketch</option>
+          <option value="charcoal">Charcoal</option>
+          <option value="ink">Ink Drawing</option>
+          <option value="watercolor">Watercolor</option>
+        </select>
+
+        <label for="intensity">Intensity:</label>
+        <input type="range" id="intensity" min="1" max="10" value="5" />
+
+        <button id="generateBtn">Generate Sketch</button>
+        <button id="downloadBtn" disabled>Download Sketch</button>
+      </div>
+
+      <div class="preview">
+        <div class="original">
+          <h3>Original Image</h3>
+          <canvas id="originalCanvas"></canvas>
+        </div>
+        <div class="sketch">
+          <h3>Generated Sketch</h3>
+          <canvas id="sketchCanvas"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
